@@ -1,1 +1,272 @@
-hello
+<!--DOCTYPE HTML-->
+<html>
+    <link href='http://fonts.googleapis.com/css?family=Voltaire' rel='stylesheet' type='text/css'>
+     <link href='http://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic' rel='stylesheet' type='text/css'>
+    <title> Nancy Huang</title>
+    
+    <style>
+        body{
+            margin: 0;
+            padding: 0; 
+            font-family: 'Quicksand'; 
+        }
+        #hello {
+            position: relative; 
+            font-family: 'Voltaire';
+            text-align:center; 
+            height: 50%; 
+        }
+        
+        .whooo {
+            position:absolute; 
+            float: left; 
+            border: solid black; 
+            width: 25%; 
+            height: 100%;
+            opacity: 0.2; 
+             
+            transition: opacity 300ms; 
+           
+        }
+        
+         
+        
+        .whooo:hover {
+            position:absolute; 
+            float: left; 
+            border: solid black; 
+            width: 25%; 
+            opacity: 1; 
+            height: 100%;
+            transition: opacity 300ms; 
+        }
+        
+        
+        
+        #intro{ 
+            height: 100%; 
+        }
+        
+        
+        /*basically any text pieces that don't have background images*/
+        .jumbo {
+            width: 100%; 
+            margin-top: 1%; 
+        }
+        
+        
+        
+        .bighugeomg {
+           width:100%; 
+            position: absolute;
+            text-align: center; 
+            font-size: 4em; 
+         
+        }
+        
+        .subtitle{
+            width:100%; 
+            top: 45%; 
+            position:absolute; 
+            text-align: center; 
+        }
+        
+        /*descriptions of sections*/
+        .header {
+            font-family: 'Voltaire';
+            font-size: 2em; 
+            text-align: center;     
+        }
+        
+        .stuff{ 
+        
+            padding-left: 10%; 
+            padding-right: 10%; 
+            margin-top: 1%; 
+        }
+    
+        a {
+            text-decoration: none; 
+        }
+        .thing {
+            position: relative; 
+            height: 100%; 
+            width: 100%; 
+            padding: 0; 
+         
+           background-size: cover; 
+            
+        }
+        
+        #pennapps {
+               background-image:url(backgroundsquare.svg);
+        }
+        
+      
+        
+        .scene {
+            position: relative; 
+            height: 100%; 
+            width: 100%; 
+        }
+        
+        
+        .character {
+            position: absolute; 
+            bottom: 0;           
+           
+        }
+        
+        .character:hover {
+           
+            
+            
+        }
+        
+        .thingtitle {
+            color: white; 
+        }
+        
+        .thingsection {
+            height:100%; 
+            width: 100%; 
+          
+        }
+        
+    </style>
+    
+    <body>
+    <div id="hello" class="jumbo">
+        <div class="bighugeomg"> Intro to Nancy</div>
+        <div class="subtitle"> a web tutorial</div>
+       <a href="#gettingstarted" ><div class="whooo">
+           Getting Started</div>
+</a>
+        
+          <div class="whooo" style="left:20%">
+           Setting Up
+        </div>
+        
+        
+        <div class="whooo" style="left:40%">
+            Hello World
+        </div>
+        <div class="whooo" style="left:60%">
+            Documentation
+        </div>
+        
+         <div class="whooo" style="left:80%">
+            Support
+        </div>
+
+    </div>
+        
+        
+    <div id="intro" class="jumbo">
+        
+
+
+
+<div class="header"> Getting Started</div>
+
+<div class="stuff"> Nancy is one of many friendly Computer Science students at the University of Pennsylvania.
+</br>
+Nancy's best work comes when she gets to combine what she knows about programming, design, and cognition together to make something super cool.
+</div>
+
+        <div class="header">Setting Up</div>
+
+<div class="stuff">Nancy is easy to install! Ask her to design something, program something, or edit your paper, and she will jump at the chance to try something new.
+
+If neither of those are handy, all you have to do is entertain her with a horrendous pun or an interesting-looking fruit and she will pretty much follow you wherever.
+</div>
+        
+        <div class="header">
+Hello World </div>
+        
+          <div class="header">
+Documentation </div>
+        
+       <div class="stuff">.coursework()
+    </br>
+        .extracurriculars()
+</br>
+.experience()
+
+</br>
+</div> 
+
+        </div>
+        
+      
+        
+        
+        <!-- skills-->
+   
+     <div class="thingsection">  
+        <!-- on hover, have the thing bounce up and down-->
+     
+      
+   
+        <div id="pennapps" class="thing">
+         <span class="thingtitle"> PennApps Design</span>
+       
+        <img class="character" style="height:50%; left:100px; " id="pennjamin" src="penguin-template.svg">
+        <img class="character" style="height:50%; left: 70px; " id="pennjamin2" src="penguin-template.svg">
+        </div> 
+        
+        
+         
+         
+         </div>
+        
+             <div class="thingsection">  
+        <!-- on hover, have the thing bounce up and down-->
+     
+      
+   
+        <div id="pennapps" class="thing">
+         <span class="thingtitle"> PennApps Design</span>
+       
+        <img class="character" style="height:50%; left:100px; " id="pennjamin" src="penguin-template.svg">
+        <img class="character" style="height:50%; left: 70px; " id="pennjamin2" src="penguin-template.svg">
+        </div> 
+        
+        
+         
+         
+         </div>
+
+
+<div id="footer" class="jumbo">
+    
+    <div class="stuff">
+This website was made with HTML, CSS, and lots and lots of nitpicky layout-draggy stuff. All rights reserved.
+    </div>
+</div>
+    <script src="jquery-1.11.1.min.js"></script>
+        
+        
+        <script>
+        $(document).ready(function() {
+            $("#pennjamin").hover( function(){
+                    $(this).animate({bottom:'19px'},'fast')
+            },
+                                  function() {
+                $(this).animate({bottom:'0px'},'fast')
+            });
+            
+             $("#pennjamin2").hover( function(){
+                    $(this).animate({bottom:'19px'},'fast')
+            },
+                                  function() {
+                $(this).animate({bottom:'0px'},'fast')
+            });
+            
+        }); 
+                          
+        </script>
+
+    </body>
+</html>
