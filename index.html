@@ -118,26 +118,29 @@
         
         /*descriptions of sections*/
         .header {
+            margin-top: 4%; 
             font-family: 'Voltaire';
             font-size: 2em; 
             text-align: center;     
         }
         
         .stuff{ 
-        
+            font-size: 1.2em; 
             padding-left: 10%; 
             padding-right: 10%; 
             margin-top: 1%; 
         }
     
         a {
-            color: black; 
+            color: 	#7FFFD4;
             text-decoration: none; 
+            transition: color 900ms; 
         }
         
         a:hover {
             color: black; 
             text-decoration: none; 
+            transition: color 900ms; 
         }
         .thing {
             position: relative; 
@@ -157,6 +160,9 @@
                background-image:url(pennplaybackground-01.svg);
         }
         
+        #itasa {
+               background-image:url(itasabackground.svg);
+        }
         
         .scene {
             position: relative; 
@@ -164,6 +170,32 @@
             width: 100%; 
         }
         
+        .row {
+            width:100%; 
+        }
+        
+        .col-3 {
+            width: 33%; 
+            position: relative; 
+            float: left; 
+        }
+        
+        .col-title {
+            width: 100%; 
+            font-family: 'Voltaire';
+            display:inline-block; 
+            position: relative; 
+          padding: 5%; 
+            text-align:center; 
+            float:left; 
+        }
+        
+         .col-lists {
+            position:relative; 
+            width: 90%; 
+            text-align:left ; 
+              
+        }
         
         .character {
             position: absolute; 
@@ -171,10 +203,24 @@
            
         }
         
-        .character:hover {
-           
+        .past {
+            font-style: italic;
+            color: grey; 
+            font-size: 0.8em; 
             
-            
+        }
+        
+        li {
+            opacity: 0.5; 
+            transition: opacity 800ms; 
+        }
+        
+        li:hover {
+            opacity: 1; 
+        }
+        
+        ul {
+            list-style-type:none; 
         }
         
         /*captions to my picture things*/
@@ -247,23 +293,59 @@
 
 <div id="gettingstarted" class="header"> Getting Started</div>
 
-<div class="stuff"> Nancy is one of many friendly Computer Science students at the University of Pennsylvania.
-</br>
-Nancy's best work comes when she gets to combine what she knows about programming, design, and cognition together to make something super cool.
+<div class="stuff"> Nancy is one of many friendly Computer Science students at the University of Pennsylvania. She's in development to work on multiple platforms, from UX design to web development to software programming.
 </div>
 
         <div id="settingup"  class="header">Setting Up</div>
 
-<div class="stuff">Nancy is easy to install! Ask her to design something, program something, or edit your paper, and she will jump at the chance to try something new.
-
-If neither of those are handy, all you have to do is entertain her with a horrendous pun or an interesting-looking fruit and she will pretty much follow you wherever.
+<div class="stuff">Nancy is easy to install. Ask her to design something, solve something, or join your team, and she will jump at the chance to try something new. Or if none of those are handy, all you have to do is entertain her with a horrendous pun or an interesting-looking fruit and she will pretty much follow you wherever.
+</br>
+        </br>
+Here's what Nancy's been studying at Penn: 
 </div>
        
+<div class="stuff">
+       <div class="row">
+    <div class="col-3">
+        <div class="col-title"> Computer Science  </div>
+    <div class="col-lists"> <ul> 
+        <li> Algorithms in Java </li>
+         <li> Intro to Computer Graphics </li>
+        <li class="past"> Programming Languages &amp; Techniques I </li>
+        <li class="past"> Mathematical Foundations of Computer Science </li>
+        <li class="past"> Intro Programming in Java</li>
+        </ul></div>
+    </div>     
+           <div class="col-3">
+        <div class="col-title"> Fine Arts </div>
+    <div class="col-lists"> <ul> 
+      
+        <li> Digital Media Foundations </li>
+        <li> 3D Modeling </li>
+        <li class="past"> Drawing I </li>
+        </ul></div>
+    </div>  
+           
+           <div class="col-3">
+        <div class="col-title"> Cognition </div>
+    <div class="col-lists"> <ul> 
+    
+        <li> Engineering Entrepreneurship I</li>
+          <li class="past"> Intro to Experimental Psych </li>
+          <li class="past"> Education in Urban Schools </li>
+        </ul></div>
+    </div>  
+    
+</div>
+</div>
+  </div>
+</br>
+</br>
 
         <div id="helloworld"  class="header">
 Hello World </div>
-        
-       
+        <div class="stuff">
+       Nancy's already been used for quite a few projects at Penn. Below have been some of her favorite recent ones and <a href="https://www.dropbox.com/sh/osrcgabyvhnlgik/AABlHtI1dmw80WGIgJOGTKYva?dl=0"> [ this ]</a> is pretty much everything else.  
         </div>
         
       
@@ -280,7 +362,9 @@ Hello World </div>
          <span class="thingtitle"> PennApps Design</span>
        <span class="thingdates"> May 2014 - present</span>
         <img class="character" style="height:50%; left:80%; " id="ocaml" src="ocaml.svg">
-            <img class="character" style="height:50%; left:100px; " id="pennjamin" src="penguin-template.svg">
+             <img class="character" style="height:80%; left:53%; " id="palogo" src="pennappslogo-01.png">
+             <img class="character" style="height:50%; left:50%; " id="robopennjamin" src="hardwarepenguin.svg">
+            <img class="character" style="height:30%; left:100px; " id="pennjamin" src="penguin-template.svg">
       
         </div> 
         
@@ -305,16 +389,29 @@ Hello World </div>
 <div id="itasa" class="thing">
          <span class="thingtitle"> ITASA ECC Marketing </span>
        <span class="thingdates"> May 2014 - February 2015</span>
-        <img class="character" style="height:50%; left:100px; " id="pennjamin" src="penguin-template.svg">
-        <img class="character" style="height:50%; left: 70px; " id="pennjamin2" src="penguin-template.svg">
+        <img class="character" style="height:50%; left:2%; " id="skyping" src="skypingfriends-01.png">
+    <img class="character" style="height:50%; left:25%; " id="brunchfriends" src="brunchfriends-01.png">
+    <img class="character" style="height:50%; left:50%; " id="triviacrack" src="quizzo-01.png">
+    <img class="character" style="height:50%; left:70%; " id="scavhunt" src="scavhunt-01.png">
+
+        
         </div>
-                 
-                 
-                 
+          
+         </div>
         
         
-         
-         
+        <div class="thingsection">   
+<div id="quadraspell" class="thing">
+         <span class="thingtitle"> Quadraspell </span>
+       <span class="thingdates"> Dec 2014 </span>
+        <img class="character" style="height:50%; left:2%; " id="skyping" src="skypingfriends-01.png">
+    <img class="character" style="height:50%; left:25%; " id="brunchfriends" src="brunchfriends-01.png">
+    <img class="character" style="height:50%; left:50%; " id="triviacrack" src="quizzo-01.png">
+    <img class="character" style="height:50%; left:70%; " id="scavhunt" src="scavhunt-01.png">
+
+        
+        </div>
+          
          </div>
 
 
