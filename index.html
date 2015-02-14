@@ -94,6 +94,8 @@
         
         /*basically any text pieces that don't have background images*/
         .jumbo {
+            position: relative; 
+            height: 100%;
             width: 100%; 
             margin-top: 1%; 
         }
@@ -163,6 +165,11 @@
         #itasa {
                background-image:url(itasabackground.svg);
         }
+        
+        #game10 {
+               background-image:url(backgroundsquare-01.png);
+        }
+        
         
         .scene {
             position: relative; 
@@ -243,6 +250,32 @@
             width: 100%; 
           
         }
+        
+        .function {
+            width:100%; 
+        }
+        .param {
+            font-style: italic; 
+            font-color: grey; 
+            font-size: 0.8em; 
+        }
+        
+        .functionname {
+            margin-top: 10px; 
+            text-align: center; 
+            font-size: 0.9em; 
+            width: 30%; 
+            position: relative; 
+            float: left; 
+        }
+        
+        .functiondescription {
+            width: 69%; 
+            margin-left: 1%;
+            position: relative; 
+            float: left; 
+        }
+        
         
     </style>
     
@@ -420,17 +453,78 @@ Hello World </div>
         <div id="documentation"  class="header">
 Documentation </div>
         
-       <div class="stuff">.coursework()
+       <div class="stuff">
+           
+           <div class="function"> 
+               <div class="functionname"> webmaster(<span class="param"> String clubName</span> ) 
+                   </div>
+               
+               <div class="functiondescription"> 
+               <ul>
+                <li>Rebuilt the <a href="upenn-pgn.org"> Phi Gamma Nu website </a> using HTML and Bootstrap </li>
+                    <li>Rebuilt the <a href="nonchee.github.io/SASE"> Society of Asian Scientists &amp; Engineer's website </a> using HTML, JQuery and Bootstrap </li>
+                   </ul>
+               </div>
+               </div>
     </br>
-        .extracurriculars()
+        <div class="function"> 
+               <div class="functionname"> designer(<span class="param"> String clubName</span> ) 
+                   </div>
+               
+               <div class="functiondescription"> 
+               <ul>
+                <li>Rebuilt the <a href="upenn-pgn.org"> Phi Gamma Nu website </a> using HTML and Bootstrap </li>
+                    <li>Rebuilt the <a href="nonchee.github.io/SASE"> Society of Asian Scientists &amp; Engineer's website </a> using HTML, JQuery and Bootstrap </li>
+                   </ul>
+               </div>
+               </div>
 </br>
-.experience()
+  <div class="function"> 
+               <div class="functionname"> languages(<span class="param"> int proficiency</span> ) 
+                   </div>
+               
+               <div class="functiondescription"> 
+               <ul>
+                <li>@ Rebuilt the <a href="upenn-pgn.org"> Phi Gamma Nu website </a> using HTML and Bootstrap </li>
+                    <li>Rebuilt the <a href="nonchee.github.io/SASE"> Society of Asian Scientists &amp; Engineer's website </a> using HTML, JQuery and Bootstrap </li>
+                   </ul>
+               </div>
+               </div>
+
+
+  <div class="function"> 
+               <div class="functionname"> applications(<span class="param"> int proficiency</span> ) 
+                   </div>
+               
+               <div class="functiondescription"> 
+               <ul>
+                <li>@ Rebuilt the <a href="upenn-pgn.org"> Phi Gamma Nu website </a> using HTML and Bootstrap </li>
+                    <li>Rebuilt the <a href="nonchee.github.io/SASE"> Society of Asian Scientists &amp; Engineer's website </a> using HTML, JQuery and Bootstrap </li>
+                   </ul>
+               </div>
+               </div>
+
+<div class="function"> 
+               <div class="functionname"> interests(<span class="param"> int proficiency</span> ) 
+                   </div>
+               
+               <div class="functiondescription"> 
+               <ul>
+                <li>@ Rebuilt the <a href="upenn-pgn.org"> Phi Gamma Nu website </a> using HTML and Bootstrap </li>
+                    <li>Rebuilt the <a href="nonchee.github.io/SASE"> Society of Asian Scientists &amp; Engineer's website </a> using HTML, JQuery and Bootstrap </li>
+                   </ul>
+               </div>
+               </div>
+
+
 
 </br>
 </div> 
 
 
+</div>
 
+<div class="jumbo">
          <div id="support"  class="header">
 Support </div>
         
@@ -438,6 +532,7 @@ Support </div>
 This website was made with HTML, CSS, and lots and lots of nitpicky layout-draggy stuff. All rights reserved.
     </div>
 </div>
+
     <script src="jquery-1.11.1.min.js"></script>
         
         
