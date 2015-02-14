@@ -30,6 +30,40 @@
            
         }
         
+            .whooo:hover {
+            position:absolute; 
+            background-color:  	#F0F8FF; 
+            float: left; 
+      
+            width: 25%; 
+            opacity: 1; 
+            height: 100%;
+            transition: opacity 900ms; 
+        }
+        
+         .whooosubtitle {
+            position:absolute; 
+            font-size: 1.5em; 
+            width: 100%; 
+            height: 100%;
+            opacity: 0; 
+            
+           
+           
+        }
+        
+           
+         .whooosubtitle:hover {
+            position:absolute; 
+            font-size: 1.2em; 
+            width: 100%; 
+            height: 100%;
+            opacity: 1; 
+            color: white; 
+           top: 35%; 
+           
+        }
+        
          .whooocontent {
             position:absolute; 
             bottom: 15%; 
@@ -40,16 +74,16 @@
         }
          
         
-        .whooo:hover {
+          .whooocontent:hover {
             position:absolute; 
-            background-color:  	#F0F8FF; 
-            float: left; 
-            color: white; 
-            width: 25%; 
-            opacity: 1; 
-            height: 100%;
-            transition: opacity 900ms; 
+            bottom: 15%; 
+            text-align: center; 
+             width: 100%; 
+          
+           
         }
+        
+    
         
         
         
@@ -99,6 +133,10 @@
         a {
             text-decoration: none; 
         }
+        
+        a:hover {
+            text-decoration: none; 
+        }
         .thing {
             position: relative; 
             height: 100%; 
@@ -134,9 +172,20 @@
             
         }
         
+        /*captions to my picture things*/
+        
         .thingtitle {
+            font-family: 'Voltaire'; 
+            font-size: 4em;
             color: white; 
         }
+        
+        .thingdates{
+            font-size: 1.2em; 
+            color: grey; 
+            font-style:italic; 
+        }
+        
         
         .thingsection {
             height:100%; 
@@ -151,24 +200,38 @@
         
        <a href="#gettingstarted" ><div class="whooo">
            <div class="whooocontent"> Getting Started</div>
+           <div class="whooosubtitle">
+           What is Nancy?
+           </div>
            </div>
 </a>
         
           <a href="#settingup" > <div class="whooo" style="left:20%">
-           <div class="whooocontent">Setting Up</div>
+           <div class="whooocontent">Setting Up
+              </div>
+              <div class="whooosubtitle"> Education </div>
         </div></a>
         
         
         <a href="#helloworld" > <div class="whooo" style="left:40%">
            <div class="whooocontent"> Hello World</div>
+            <div class="whooosubtitle">
+           Portfolio &amp; Projects
+           </div>
         </div></a>
         
         <a href="#documentation" > <div class="whooo" style="left:60%">
            <div class="whooocontent"> Documentation</div>
+             <div class="whooosubtitle">
+           Experience, Extracurriculars &amp; Skills
+           </div>
         </div></a>
         
         <a href="#support" >  <div class="whooo" style="left:80%">
           <div class="whooocontent">  Support</div>
+            <div class="whooosubtitle">
+           Contact 
+           </div>
         </div></a>
 <div class="bighugeomg"> Intro to Nancy</div>
         <div class="subtitle"> a web tutorial</div>
@@ -214,7 +277,7 @@ Hello World </div>
       
         
         
-        <!-- skills-->
+        <!-- portfolio-->
    
      <div class="thingsection">  
         <!-- on hover, have the thing bounce up and down-->
@@ -223,7 +286,7 @@ Hello World </div>
    
         <div id="pennapps" class="thing">
          <span class="thingtitle"> PennApps Design</span>
-       
+       <span class="thingdates"> May 2014 - present</span>
         <img class="character" style="height:50%; left:100px; " id="pennjamin" src="penguin-template.svg">
         <img class="character" style="height:50%; left: 70px; " id="pennjamin2" src="penguin-template.svg">
         </div> 
@@ -237,13 +300,24 @@ Hello World </div>
         <!-- on hover, have the thing bounce up and down-->
      
       
-   
-        <div id="pennapps" class="thing">
-         <span class="thingtitle"> PennApps Design</span>
-       
+      <div id="pennplay" class="thing">
+         <span class="thingtitle"> PennPlay Marketing </span>
+       <span class="thingdates"> Dec 2014 - March 2015</span>
         <img class="character" style="height:50%; left:100px; " id="pennjamin" src="penguin-template.svg">
         <img class="character" style="height:50%; left: 70px; " id="pennjamin2" src="penguin-template.svg">
-        </div> 
+        </div>
+        </div>
+                 
+<div class="thingsection">   
+<div id="itasa" class="thing">
+         <span class="thingtitle"> ITASA ECC Marketing </span>
+       <span class="thingdates"> May 2014 - February 2015</span>
+        <img class="character" style="height:50%; left:100px; " id="pennjamin" src="penguin-template.svg">
+        <img class="character" style="height:50%; left: 70px; " id="pennjamin2" src="penguin-template.svg">
+        </div>
+                 
+                 
+                 
         
         
          
